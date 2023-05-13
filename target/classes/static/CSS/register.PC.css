@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: rgb(209, 226, 255);
+    min-width: 1500px;
+}
+
+
+div {
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
+    background-image: url(../image/登录注册背景图.png);
+    border-radius: 50px 50px 50px 50px;
+}
+
+table {
+    text-align: center;
+    position: absolute;
+    left: 200px;
+    top:175px;
+    width: 400px; 
+    height: 150px;
+    background-color: rgba(235, 229, 229, 0.4);
+}
+
+input {
+    width: 250px;
+    height: 25px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+}

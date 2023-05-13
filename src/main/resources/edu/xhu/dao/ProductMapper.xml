@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="edu.xhu.dao.ProductMapper">
+    <select id="selectAllProduct" resultType="edu.xhu.pojo.Product">
+        select * from product
+    </select>
+
+    <select id="selectByProductName" resultType="edu.xhu.pojo.Product">
+        select * from product where name like concat('%', #{name}, '%')
+    </select>
+
+    <select id="selectByUserName" resultType="edu.xhu.pojo.Product">
+        select * from product where id in (select id from user_product where user_name = #{userName})
+    </select>
+    
+    <insert id="insertProduct">
+        insert into product (name, kind, price, img, description) values (#{name}, #{kind}, #{price}, #{img}, #{description})
+    </insert>
+
+    <select id="selectById" resultType="edu.xhu.pojo.Product">
+        select * from product where id = #{id}
+    </select>
+
+</mapper>

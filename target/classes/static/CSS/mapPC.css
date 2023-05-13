@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    background-color: rgb(209, 226, 255);
+}
+
+
+/* -------------------- header -------------------- */
+.headerNav {
+    height: 50px;
+    background-color: rgb(227, 228, 229);
+    border-bottom: 2px solid red;
+    margin-bottom: 70px;
+}
+
+.headerNav div {
+    margin-left: 30px;
+    width: 15%;
+    height: 50px;
+}
+
+.headerNav div ul {
+    list-style: none;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.headerNav div ul li {
+
+    position: relative;
+
+    display: inline-block;
+    width: 100px;
+}
+
+.headerNav div ul li:hover {
+    background-color: bisque;
+}
+
+
+.headerNav div > ul > li:first-child:hover {
+    transform: translate(2px, -3px);
+    transition: all 0.3s linear;
+}
+
+.headerNav div ul li ul {
+    position: absolute;
+    display: none;
+}
+
+.headerNav div ul li:hover ul  {
+    display: block;
+}
+
+.headerNav div ul li ul li{
+    background-color: rgb(227, 228, 229);
+
+
+    height: 100%;
+}
+
+.headerNav div ul li ul li:hover {
+    transform: translate(2px, -3px);
+    transition: all 0.3s linear;
+}
+
+
+.headerNav button {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+.headerNav a {
+    text-decoration: none;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* -------------------- main -------------------- */
+
+main {
+    width: 60%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#information {
+    background-color: aqua;
+    height: 20%;
+}
+
+#map {
+    height: 80%;
+}
